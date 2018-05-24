@@ -10,4 +10,19 @@
 
 @implementation WXXDownloadObject
 
+- (instancetype)initWithSession:(NSURLSessionDownloadTask *)downloadTask progressBlock:(WXXDownloadProgressBlock)progressBlock remainingTime:(WXXDownloadRemainingSecondsBlock)remainingSecondsBlock completionBlock:(WXXDownloadCompletionBlock)completionBlock{
+    if (self = [super init]){
+        _downloadTask = downloadTask;
+        _progressBlock = progressBlock;
+        _remainingSecondsBlock = remainingSecondsBlock;
+        _completionBlock = completionBlock;
+    }
+    return self;
+}
+- (void)closeOutputStream{
+    if (_outputStream){
+        [_outputStream close];
+        _outputStream = nil;
+    }
+}
 @end

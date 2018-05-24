@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^WXXBackgroundDownloadCompletion)(void);
+
 @interface WXXDownloadManager : NSObject
+
+//backgroundDownload finish callback
+@property (nonatomic, copy)WXXBackgroundDownloadCompletion backgroundDownloadCompletion;
+
++ (instancetype)sharedManager;
+
 
 @end
