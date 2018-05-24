@@ -19,12 +19,10 @@ typedef void(^WXXDownloadCompletionBlock)(BOOL completed);
 @property (copy, nonatomic) WXXDownloadCompletionBlock completionBlock; //下载完成回调
 @property (copy, nonatomic) WXXDownloadRemainingSecondsBlock remainingSecondsBlock; //下载剩余时间回调
 
-//文件的下载流
-@property (nonatomic, strong)NSOutputStream *outputStream;
-//文件下载的URL
-@property (nonatomic, strong)NSURL *fileURL;
-//文件的总长度
-@property (nonatomic, assign)long long totalLength;
+
+@property (nonatomic, strong)NSOutputStream *outputStream;   //文件的下载流
+@property (nonatomic, strong)NSURL *fileURL;    //文件下载的URL
+@property (nonatomic, assign)long long totalLength;    //文件的总长度
 
 @property (strong, nonatomic) NSURLSessionDownloadTask *downloadTask;
 @property (copy, nonatomic)   NSString *fileName;      //文件名字
