@@ -13,6 +13,8 @@
 		C75175FC20B65F5E00B89EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75175FB20B65F5E00B89EE5 /* Assets.xcassets */; };
 		C75175FF20B65F5E00B89EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75175FD20B65F5E00B89EE5 /* LaunchScreen.storyboard */; };
 		C751760220B65F5E00B89EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C751760120B65F5E00B89EE5 /* main.m */; };
+		C751760C20B664CB00B89EE5 /* WXXDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C751760B20B664CB00B89EE5 /* WXXDownloadManager.m */; };
+		C751760F20B6652200B89EE5 /* WXXDownloadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C751760E20B6652200B89EE5 /* WXXDownloadObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		C75175FE20B65F5E00B89EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C751760020B65F5E00B89EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C751760120B65F5E00B89EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C751760A20B664CB00B89EE5 /* WXXDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXXDownloadManager.h; sourceTree = "<group>"; };
+		C751760B20B664CB00B89EE5 /* WXXDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXXDownloadManager.m; sourceTree = "<group>"; };
+		C751760D20B6652200B89EE5 /* WXXDownloadObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXXDownloadObject.h; sourceTree = "<group>"; };
+		C751760E20B6652200B89EE5 /* WXXDownloadObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXXDownloadObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		C75175F120B65F5D00B89EE5 /* WXXDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
+				C751760920B6649200B89EE5 /* DownloadManager */,
 				C75175F220B65F5D00B89EE5 /* AppDelegate.h */,
 				C75175F320B65F5D00B89EE5 /* AppDelegate.m */,
 				C75175F520B65F5D00B89EE5 /* ViewController.h */,
@@ -69,6 +76,17 @@
 				C751760120B65F5E00B89EE5 /* main.m */,
 			);
 			path = WXXDownloadManager;
+			sourceTree = "<group>";
+		};
+		C751760920B6649200B89EE5 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				C751760A20B664CB00B89EE5 /* WXXDownloadManager.h */,
+				C751760B20B664CB00B89EE5 /* WXXDownloadManager.m */,
+				C751760D20B6652200B89EE5 /* WXXDownloadObject.h */,
+				C751760E20B6652200B89EE5 /* WXXDownloadObject.m */,
+			);
+			path = DownloadManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C751760C20B664CB00B89EE5 /* WXXDownloadManager.m in Sources */,
 				C75175F720B65F5D00B89EE5 /* ViewController.m in Sources */,
 				C751760220B65F5E00B89EE5 /* main.m in Sources */,
 				C75175F420B65F5D00B89EE5 /* AppDelegate.m in Sources */,
+				C751760F20B6652200B89EE5 /* WXXDownloadObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYFVDC483X;
 				INFOPLIST_FILE = WXXDownloadManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYFVDC483X;
 				INFOPLIST_FILE = WXXDownloadManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

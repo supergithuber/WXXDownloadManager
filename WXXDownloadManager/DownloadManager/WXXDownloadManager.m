@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  WXXDownloadManager.m
 //  WXXDownloadManager
 //
 //  Created by Wuxi on 2018/5/24.
 //  Copyright © 2018年 wuxi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WXXDownloadManager.h"
 
-@interface ViewController : UIViewController
-
+@implementation WXXDownloadManager
 
 @end
-

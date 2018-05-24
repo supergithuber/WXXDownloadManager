@@ -2,7 +2,7 @@
 //  ViewController.m
 //  WXXDownloadManager
 //
-//  Created by HFY on 2018/5/24.
+//  Created by Wuxi on 2018/5/24.
 //  Copyright © 2018年 wuxi. All rights reserved.
 //
 
