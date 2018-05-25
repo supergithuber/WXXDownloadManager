@@ -42,7 +42,8 @@
     }
     return self;
 }
-
+//MARK: - Download
+//- (void)
 //MARK: - Clean directory
 - (void)cleanDirectoryNamed:(NSString *)directory {
     NSFileManager *fm = [NSFileManager defaultManager];
@@ -58,5 +59,4 @@
         [[NSFileManager defaultManager] removeItemAtPath:[NSString stringWithFormat:@"%@%@", NSTemporaryDirectory(), file] error:NULL];
     }
 }
-
 @end
